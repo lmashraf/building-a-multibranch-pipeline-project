@@ -28,7 +28,7 @@ pipeline
 				sh './jenkins/scripts/test.sh'
 			}
 		}
-		stage('Deliver for Development')
+		stage('Deliver for development')
 		{
 			when
 			{
@@ -41,7 +41,7 @@ pipeline
 				sh './jenkins/scripts/kill.sh'
 			}
 		}
-		stage('Deliver for Production')
+		stage('Deploy for production')
 		{
 			when
 			{
